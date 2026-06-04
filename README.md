@@ -1,49 +1,106 @@
-. This Power BI project showcases the ability to transform complex sales data into meaningful insights through advanced data visualization techniques. The interactive dashboard not only highlights key performance metrics but also provides actionable recommendations to drive business growth and efficiency.
+# HR Analytics Dashboard — Power BI
 
-Objective:
-- The primary goal of this Power BI project is to leverage data visualization techniques to analyze and interpret sales data, providing actionable insights to drive business decisions and enhance sales performance.
+An interactive Power BI dashboard analyzing employee attrition patterns across a workforce of **1,473 employees**, designed to help HR and business teams identify retention risks and take data-driven action.
 
-Key Responsibilities:
-- Developed an interactive Power BI dashboard to visualize key sales metrics.
-- Analyzed sales data to identify trends, patterns, and anomalies.
-- Created detailed visual reports highlighting sales performance and key insights.
-- Utilized DAX (Data Analysis Expressions) to perform complex calculations and enhance data analysis.
-Integrated multiple data sources to provide a comprehensive view of sales performance.
+---
 
+## Dashboard Preview
 
-- Key Findings:
-Sales Trends: Identified overall sales trends, including monthly and quarterly sales performance, which helped in understanding the business's growth trajectory.
-Top Products: Determined the best-selling products, providing insights into customer preferences and inventory management.
-Revenue Analysis: Analyzed revenue streams to identify the most profitable products and sales channels.
-Regional Performance: Assessed sales performance across different regions to identify high-performing and underperforming areas.
-Customer Segmentation: Segmented customers based on purchasing behavior, enabling targeted marketing strategies.
+![HR Analytics Dashboard](dashboard.png)
 
+---
 
-Tools and Technologies Used:
-Power BI: For creating interactive and visually compelling dashboards.
-DAX (Data Analysis Expressions): For advanced calculations and data analysis.
-Multiple Data Sources: Integrated data from various sources for a holistic view of sales performance.
+## Objective
 
+To analyze key HR metrics and identify the primary drivers of employee attrition — helping organizations reduce turnover, improve workforce planning, and target retention efforts effectively.
 
-Dashboard Features:
-Sales Overview: Real-time visualizations of total sales, revenue, and number of orders.
-Product Performance: Visualizations showing the performance of different products, including best-sellers and underperforming items.
-Revenue Breakdown: Pie charts and bar graphs illustrating the revenue contribution of different products and sales channels.
-Regional Sales Analysis: Geographical maps and charts displaying sales performance across various regions.
-Customer Insights: Visualizations depicting customer segmentation and purchasing behavior.
+---
 
+## Dataset
 
-Impact:
-Enhanced Decision-Making: Provided stakeholders with clear, data-driven insights to inform strategic business decisions.
-Increased Sales Performance: Identified opportunities for boosting sales through targeted promotions and product optimization.
-Improved Customer Targeting: Enabled more effective marketing strategies by understanding customer segments and behavior.
-Operational Efficiency: Streamlined sales operations by identifying high-performing products and regions, allowing for better resource allocation.
+- **File:** `HR_Analytics.csv`
+- **Records:** 1,473 employees
+- **Key columns:** Age, Department, Education, Job Role, Salary Slab, Years at Company, Attrition
 
+---
 
+## Key Metrics
 
+| Metric | Value |
+|---|---|
+| Total Employees | 1,473 |
+| Total Attrition | 237 |
+| Attrition Rate | 16.1% |
+| Average Age | 37 |
+| Average Salary | ₹6.5K |
+| Average Tenure | 7.0 years |
 
+---
 
+## Dashboard Features
 
+**Attrition by Education**
+- Life Sciences leads at 41.14%, followed by Medical (31.64%), Marketing (10.79%), and Technical Degree (8.96%)
 
+**Attrition by Age Group**
+- Highest attrition in the 26–35 age group (607 employees), declining sharply after 45
 
+**Attrition by Salary Slab**
+- 751 employees earning up to ₹5K show the highest attrition — a clear signal for compensation review
 
+**Attrition by Job Role**
+- Sales Executives (326) and Research Scientists (292) are the most at-risk roles
+
+**Attrition by Years at Company**
+- Peak attrition at Year 1 (197) and Year 5 (120), suggesting critical retention windows
+
+**Job Satisfaction Matrix**
+- Cross-tab of satisfaction rating (1–4) by job role showing 237 total attrition cases with per-role breakdown
+
+**Department Filter**
+- Interactive slicer for Human Resources, Research & Development, and Sales
+
+---
+
+## Technical Implementation
+
+- **Tool:** Microsoft Power BI Desktop
+- **DAX Measures:** Attrition Rate, Average Salary, Average Tenure, conditional KPI formatting
+- **Visualizations:** Donut chart, bar charts, line chart, matrix table, KPI cards
+- **Interactivity:** Department slicer filters all visuals dynamically
+
+---
+
+## Key Insights
+
+1. **Salary is the strongest attrition driver** — employees earning under ₹5K account for the majority of exits
+2. **Early tenure is critical** — attrition peaks at Year 1, suggesting onboarding and early engagement gaps
+3. **Sales and R&D roles need targeted retention** — these two departments drive the most absolute attrition
+4. **26–35 age group is highest risk** — likely due to career growth expectations not being met
+
+---
+
+## Files in This Repo
+
+| File | Description |
+|---|---|
+| `HR_Analytics.csv` | Raw dataset used for the dashboard |
+| `project1.pbix` | Power BI Desktop file (open with Power BI Desktop) |
+| `project1 (1).pdf` | Static PDF export of the dashboard |
+
+---
+
+## How to Run
+
+1. Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
+2. Clone this repository
+3. Open `project1.pbix` in Power BI Desktop
+4. The dashboard will load with all visuals and interactivity intact
+
+---
+
+## Tools Used
+
+- Microsoft Power BI Desktop
+- DAX (Data Analysis Expressions)
+- Microsoft Excel / CSV for data source
